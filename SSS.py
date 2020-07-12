@@ -31,6 +31,12 @@ def AddRule():
 
 
 myButton = Button(root,text="Add Firewall Rule",command=AddRule)
-myButton.pack()
+myButton.pack(fill=X,pady=8)
+
+myButton2 = Button(root,text="Enable Rule", bg="green",fg="white")
+myButton2.pack(fill=X, pady=8)
+
+myButton3 = Button(root,text="Disable Rule",bg="red",fg="white")
+myButton3.pack(fill=X, pady=8)
 
 root.mainloop()
